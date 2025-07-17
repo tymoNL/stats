@@ -1,0 +1,39 @@
+:root {
+    --white: rgba(246,240,240,1);
+    --red: rgba(195,59,59, 1);
+    --green: rgba(46,135,32, 1);
+    --brown: rgba(126,77,50,1);
+    --blue: rgba(121,182,206,1);
+
+    --background-color: var(--white);
+    --link-color: var(--red);
+    --button-background-color: var(--green);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100dvh;
+}
+
+main {
+
+}
+
+.container {
+    padding-inline: 1rem;
+    width: 100%;
+    max-width: 1400px;
+    margin-inline: auto;
+
+    @media screen and(min-width: 768px) {
+        padding-inline: 0;
+    }
+}

@@ -1,0 +1,10 @@
+header {
+    background-color: var(--background-color);
+}
+
+footer {
+
+    .footerBottom {
+        text-align: center;
+    }
+}

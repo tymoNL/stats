@@ -20,6 +20,11 @@ main {
     min-height: calc(100vh - 200px); /* Zorg dat de main de hoogte van het scherm vult, minus header/footer */
 }
 
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
 .back-button {
     text-align: center;
     margin-bottom: 20px;

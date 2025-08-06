@@ -1,39 +1,38 @@
-:root {
-    --white: rgba(246,240,240,1);
-    --red: rgba(195,59,59, 1);
-    --green: rgba(46,135,32, 1);
-    --brown: rgba(126,77,50,1);
-    --blue: rgba(121,182,206,1);
-
-    --background-color: var(--white);
-    --link-color: var(--red);
-    --button-background-color: var(--green);
-}
-
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
 body {
     margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100dvh;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
 }
 
-main {
-
+.layout {
+    max-width: 1400px; /* Beperk de breedte van de inhoud */
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .container {
-    padding-inline: 1rem;
-    width: 100%;
-    max-width: 1400px;
-    margin-inline: auto;
+    text-align: center;
+    padding: 20px;
+}
 
-    @media screen and(min-width: 768px) {
-        padding-inline: 0;
-    }
+main {
+    min-height: calc(100vh - 200px); /* Zorg dat de main de hoogte van het scherm vult, minus header/footer */
+}
+
+.back-button {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: var(--accent-color);
 }

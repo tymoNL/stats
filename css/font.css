@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#statsTable th {
+    font-size: 0.85em;
+    font-weight: 500;
+}
+
+#statsTable td {
+    font-size: 0.9em;
+}
+
+header .container {
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+footer .footerBottom p {
+    font-size: 0.85em;
+}

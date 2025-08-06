@@ -1,39 +1,83 @@
 <!DOCTYPE html>
 <html lang="nl">
-
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- Font-awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/60177191?v=4" />
-    <title>Stats</title>
-
+    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/60177191?v=4">
+    <title>Baseball Stats</title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/font.css" />
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/header-footer.css" />
-
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header-footer.css">
     <!-- JS -->
     <script src="js/script.js" defer></script>
+    <script src="js/data.js"></script>
 </head>
-
 <body>
     <header class="layout">
         <section class="container">
-            Stats
+            Baseball Stats
         </section>
     </header>
 
     <main class="layout">
-
-    </main>
+    <div class="table-container">
+        <table id="statsTable">
+            <caption>Player Statistics</caption>
+            <thead>
+                <tr>
+                    <th scope="col" title="Player name">Name</th>
+                    <th scope="col" title="Batting average">AVG</th>
+                    <th scope="col" title="On-base percentage">OBP</th>
+                    <th scope="col" title="Slugging percentage">SLG</th>
+                    <th scope="col" title="On-base plus slugging">OPS</th>
+                    <th scope="col" title="Plate appearances">PA</th>
+                    <th scope="col" title="At bats">AB</th>
+                    <th scope="col" title="Runs scored">R</th>
+                    <th scope="col" title="Hits">H</th>
+                    <th scope="col" title="Walks (Base on balls)">BB</th>
+                    <th scope="col" title="Singles">1B</th>
+                    <th scope="col" title="Doubles">2B</th>
+                    <th scope="col" title="Triples">3B</th>
+                    <th scope="col" title="Home runs">HR</th>
+                    <th scope="col" title="Runs batted in">RBI</th>
+                    <th scope="col" title="Strikeout percentage">K%</th>
+                    <th scope="col" title="Total strikeouts">SO</th>
+                    <th scope="col" title="Hit by pitch">HBP</th>
+                    <th scope="col" title="Stolen bases">SB</th>
+                    <th scope="col" title="Caught stealing">CS</th>
+                    <th scope="col" title="Stolen base success percentage">SB%</th>
+                    <th scope="col" title="Sacrifice flies">SF</th>
+                    <th scope="col" title="Sacrifice bunts">SAC</th>
+                    <th scope="col" title="At bats with runners in scoring position">AB / RSP</th>
+                    <th scope="col" title="Batting average with runners in scoring position">AVG / RSP</th>
+                    <th scope="col" title="Games played (not available)">GPI</th>
+                    <th scope="col" title="Line drive percentage">LD%</th>
+                    <th scope="col" title="Pop-up percentage">PU%</th>
+                    <th scope="col" title="Fly ball percentage">FB%</th>
+                    <th scope="col" title="Ground ball percentage">GB%</th>
+                    <th scope="col" title="Strikeout percentage">K%</th>
+                    <th scope="col" title="Walk percentage">BB%</th>
+                    <th scope="col" title="Hit percentage">H%</th>
+                    <th scope="col" title="Strikes thrown">Strike</th>
+                    <th scope="col" title="Fouls">Foul</th>
+                    <th scope="col" title="Balls thrown">Ball</th>
+                    <th scope="col" title="Balls in play">BIP</th>
+                    <th scope="col" title="Total pitches">TP</th>
+                    <th scope="col" title="Pitches per plate appearance">P/PA</th>
+                    <th scope="col" title="Batting average on balls in play">BABIP</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</main>
 
     <footer class="layout">
-
         <section class="footerBottom">
             <p>
                 <i class="fa-regular fa-copyright"></i>
@@ -42,3 +86,4 @@
         </section>
     </footer>
 </body>
+</html>

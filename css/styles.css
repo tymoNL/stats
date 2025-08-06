@@ -1,0 +1,119 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --background-color: #f4f4f9;
+    --text-color: #333;
+    --accent-color: #e74c3c;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden; /* Voorkom horizontale scrollbar op het document */
+}
+
+.layout {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Scrollbar alleen voor de tabel */
+    -webkit-overflow-scrolling: touch; /* Vloeiender scrollen op mobiel */
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#statsTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#statsTable caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+#statsTable th, #statsTable td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    min-width: 60px; /* Minimale kolombreedte */
+    max-width: 150px;
+}
+
+#statsTable th {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+#statsTable th:first-child, #statsTable td:first-child {
+    position: sticky;
+    left: 0; /* Zorg dat de achtergrond consistent is */
+    z-index: 5;
+}
+
+#statsTable th:first-child {
+     background-color: var(--primary-color);
+}
+
+#statsTable td:first-child {
+    background-color: #fff;
+}
+
+#statsTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#statsTable tbody tr:hover {
+    background-color: #e8ecef;
+    transition: background-color 0.3s ease;
+}
+
+.gold { background-color: #ffd700; font-weight: bold; }
+.silver { background-color: #c0c0c0; font-weight: bold; }
+.bronze { background-color: #cd7f32; font-weight: bold; }
+
+@media (max-width: 1200px) {
+    #statsTable th, #statsTable td {
+        min-width: 50px;
+        padding: 8px;
+        font-size: 0.85em;
+    }
+
+    .table-container::before {
+        content: "← Scroll voor meer →";
+        display: block;
+        text-align: center;
+        font-size: 0.9em;
+        color: #666;
+        padding: 10px;
+        background-color: #f4f4f9;
+    }
+}
+
+@media (max-width: 600px) {
+    #statsTable th, #statsTable td {
+        min-width: 40px;
+        font-size: 0.75em;
+        padding: 6px;
+    }
+}
